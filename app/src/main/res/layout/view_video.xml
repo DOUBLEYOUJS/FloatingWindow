@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/frameLayout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="#ffffffff"
+                                             tools:ignore="ResourceName">
+
+
+    <FrameLayout
+            android:id="@+id/llt_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <View
+                android:id="@+id/bg_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#000000"/>
+        <VideoView
+                android:id="@+id/vv_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <TextView
+            android:id="@+id/tv_bitrate"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:text="Bitrate"
+            android:textColor="#7CFC00"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/llt_surface"
+            app:layout_constraintTop_toTopOf="@+id/llt_surface"/>
+
+    <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_video_close"
+            app:layout_constraintEnd_toEndOf="@+id/llt_surface"
+            app:layout_constraintTop_toTopOf="@+id/llt_surface"/>
+
+
+    <FrameLayout
+            android:id="@+id/flt_zoom"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/llt_surface"
+            app:layout_constraintEnd_toEndOf="@+id/llt_surface">
+
+        <ImageView
+                android:id="@+id/iv_zoom"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/ic_zoom_big"/>
+    </FrameLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_switch"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginBottom="4dp"-->
+    <!--android:layout_marginStart="4dp"-->
+    <!--android:text="@string/arlink_push"-->
+    <!--android:textColor="#ffffff"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<Switch-->
+    <!--android:id="@+id/switch_view"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginBottom="4dp"-->
+    <!--android:layout_marginStart="4dp"-->
+    <!--android:textOff="打开"-->
+    <!--android:textOn="关闭"-->
+    <!--android:thumb="@drawable/switch_ios_thumb"-->
+    <!--android:track="@drawable/switch_ios_track_selector"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintStart_toEndOf="@id/tv_switch" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_push_status"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#00000000"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/arlink_start_push"-->
+    <!--android:textColor="#ffffff"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent" />-->
+</android.support.constraint.ConstraintLayout>
